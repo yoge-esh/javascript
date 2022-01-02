@@ -47,3 +47,4 @@ console.log(Name[Name.length-1]);
 console.log(Name[Name.length-2]);
 console.log(Name[Name.length-3]);
 console.log(Name[Name.length-5]);
+
