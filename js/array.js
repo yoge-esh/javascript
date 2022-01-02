@@ -95,7 +95,25 @@ console.log(array5)
 // next way to clong 
 let array6 = [].concat(array4)
 array4.push(5)
-console.log(array6)
 
 console.log(array4 === array6)
+console.log(array6)
 
+
+// new way to clone the array 
+// spread operator 
+let array7 = [...array4] ;
+array4.push(4, 5, 6, 7); // only added to array4
+console.log(array4 === array5);
+console.log(array4)
+console.log(array5)
+
+let assign = ['hello', 'yogesh'];
+// let assign1 = assign;
+
+// cloning the arraya with spread operator 
+let assign3 = ['i am doing great']; // i can clone this too 
+let assign2 = [...assign, ...assign3]; // we can add in same line too 
+// assign.push('how are you doing?')
+console.log(assign)
+console.log(assign2)
