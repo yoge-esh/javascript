@@ -1,0 +1,24 @@
+<!-- sort the data in an array -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sort the data in an array </title>
+</head>
+<body>
+    <h2><u>sort</u></h2>
+    <script>
+        // sort the data in an array 
+        var data = [3, 4, 2, 1, 8, 7, 6, 9, 5, 10];
+        document.write("<h3>Original Array</h3>");
+        document.write("<p>" + data + "</p>");
+        document.write("<h3>Sorted Array</h3>");
+        data.sort(function(a, b) { 
+            return a - b; 
+        });
+        document.write(data);
+    </script>
+</body> 
+</html>
