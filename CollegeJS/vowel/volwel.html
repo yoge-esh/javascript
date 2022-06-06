@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vowels
+    <title>vowel lettes present in word</title>
 </head>
 <body>
-    <h2>Vowels</h2>
-    <p>no of vowels letter is, </p>
-    <script src="volwel.js"></script>
+    <script>
+        // count the number of vowel letter present in word input by user 
+        var str = prompt("Enter a word: ").toLowerCase();
+        var vowel = 0;
+        if(str.length > 0){
+            for(var i = 0; i < str.length; i++){
+                if(str[i] == "a" || str[i] == "e" || str[i] == "i" || str[i] == "o" || str[i] == "u"){
+                    vowel++;
+                }
+            }
+        }
+        document.write("<h3><u>Vowel Letters Present in Word</u></h3>");
+        document.write("<p>The word <b>" + str + "</b> has <b>" + vowel + "</b> vowel letters.</p>");
+    </script>
 </body>
 </html>
